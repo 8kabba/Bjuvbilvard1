@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bjuv's Bilvård — Mall</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="topnav" id="topnav">
+    <div class="logo">Bjuv's</div>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu">☰</button>
+    <ul id="main-menu" class="menu">
+      <li><a href="#start">Start</a></li>
+      <li><a href="#tjanster">Tjänster</a></li>
+      <li><a href="#om">Om</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="start">
+    <div class="hero-overlay">
+      <h1>Välkommen till din enkla webbplats</h1>
+      <p>En responsiv HTML5/CSS3-mall med bakgrundsbild enligt ditt uppladdade motiv.</p>
+      <a class="btn" href="#tjanster">Se våra tjänster</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="tjanster" class="cards">
+      <article class="card">
+        <h2>Bilvård</h2>
+        <p>Professionell biltvätt och inre rengöring — snabbt, prisvärt och noggrant.</p>
+      </article>
+      <article class="card">
+        <h2>Däckcenter</h2>
+        <p>Byte, förvaring och balansering av däck. Vi hjälper dig året runt.</p>
+      </article>
+      <article class="card">
+        <h2>Reparation</h2>
+        <p>Småreparationer och service — boka enkelt via kontaktformuläret.</p>
+      </article>
+    </section>
+
+    <section id="om" class="about">
+      <h2>Om oss</h2>
+      <p>Denna mall är byggd med ren HTML5 och CSS3. Bakgrunden använder din uppladdade bild (assets/bg.jpg).</p>
+      <ul>
+        <li>Semantic HTML</li>
+        <li>Mobilvänlig meny</li>
+        <li>Lätt att anpassa</li>
+      </ul>
+    </section>
+
+    <section id="kontakt" class="contact">
+      <h2>Kontakt</h2>
+      <p>Telefon: <strong>0762-955089</strong></p>
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('Formulär skickat (demo)');">
+        <label>
+          Namn<br />
+          <input type="text" placeholder="Ditt namn" required />
+        </label>
+        <label>
+          Meddelande<br />
+          <textarea placeholder="Skriv här..." required></textarea>
+        </label>
+        <button class="btn" type="submit">Skicka</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>© 2025 Bjuv's Bilvård — Mall. Adress: Mörarpsvägen 2, 267 32 Bjuv</div>
+    <div class="small">Design: Enkel HTML/CSS-mall</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
